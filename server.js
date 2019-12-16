@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000
 
 //把html傳給使用者
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/internal.html');
+    res.sendFile(__dirname + '/toDoList.html');
 })
 
 app.use(serveStatic(path.join(__dirname, 'public')))
